@@ -1,4 +1,4 @@
-## Active Power Factor Correction (APFC)
+## active power factor correction
 
 ### Overview & Objectives
 
