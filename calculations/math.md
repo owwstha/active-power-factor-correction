@@ -26,12 +26,12 @@ $$\Delta V_{o,\text{p-p}} = \frac{0.6\text{A}}{2 \pi \times 50\text{Hz} \times 1
 
 * **Inner Loop (Current Control)**
   * P=1, I=50
-  * **Function**: Fast control loop designed to force inductor current $I_L(t)$ to track the rectified AC voltage reference.
+  * Fast control loop designed to force inductor current $I_L(t)$ to track the rectified AC voltage reference.
   * **$K_{p,i}$**: High proportional gain to maximize bandwidth and minimize switching ripple phase error.
   * **$K_{i,i}$**: Integral gain to eliminate steady-state current tracking error.
 
 * **Outer Loop (Voltage Control)**
   * P=0.1, I=10
-  * **Function**: Slow control loop regulating the average output DC voltage ($20\text{V}$).
+  * Slow control loop regulating the average output DC voltage ($20\text{V}$).
   * **$K_{p,v}$**: Proportional gain tuned for low crossover frequency ($<20\text{Hz}$) to avoid amplifying $100\text{Hz}$ ripple into the current reference.
   * **$K_{i,v}$**: Integral gain ensuring zero steady-state error under varying load conditions.
